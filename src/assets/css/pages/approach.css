@@ -1,0 +1,41 @@
+section.approaches {
+  align-items: center;
+  background-color: var(--light-yellow-color);
+  color: var(--dark-gray-color);
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  padding: var(--section-y-padding) var(--section-x-padding);
+
+  h4 {
+    font-family: Forum, serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: none;
+  }
+
+  p {
+    margin-top: 24px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @container (max-width: 719px) {
+    li + li {
+      margin-top: 32px;
+    }
+  }
+
+  @container (min-width: 720px) {
+    ul {
+      display: grid;
+      gap: 36px;
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+      max-width: 720px;
+    }
+  }
+}

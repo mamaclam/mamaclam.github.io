@@ -1,0 +1,11 @@
+section.im-alexandra {
+  background-color: var(--light-yellow-color);
+  color: var(--dark-gray-color);
+  container-type: inline-size;
+  display: flex;
+  padding: var(--section-y-padding) var(--section-x-padding);
+
+  p {
+    margin-top: 16px;
+  }
+}

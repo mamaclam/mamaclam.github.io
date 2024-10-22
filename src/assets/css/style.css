@@ -1,0 +1,178 @@
+/* ---- vars ---- */
+
+:root {
+  /* colors */
+  --black-color: #424242;
+  --dark-brown-color: #4F3E0F;
+  --dark-gray-color: #636260;
+  --dark-yellow-color: #C69B25;
+  --light-yellow-color: #ECE0C3;
+  --yellow-color: #E3B741;
+  --white-color: #F8F7F2;
+  /* layout */
+  --section-x-padding: 32px;
+  --section-y-padding: 48px;
+}
+
+/* ---- font ---- */
+
+@font-face {
+  font-family: Bame;
+  src: url('/assets/fonts/Bame-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bame;
+  src: url('/assets/fonts/Bame-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bame;
+  src: url('/assets/fonts/Bame-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Forum;
+  src: url('/assets/fonts/Forum-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Karla;
+  src: url('/assets/fonts/Karla-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Karla;
+  src: url('/assets/fonts/Karla-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url('/assets/fonts/Lora-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url('/assets/fonts/Lora-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+/* ---- base ---- */
+
+body {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-family: Karla, sans-serif;
+  letter-spacing: -0.025em; /* Removes space between letters */
+}
+
+footer {
+  font-size: 12px;
+  padding: 24px var(--section-x-padding);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--dark-gray-color);
+
+  a {
+    color: var(--dark-gray-color);
+
+    &:hover {
+      color: var(--dark-yellow-color);
+    }
+  }
+
+  p + p {
+    margin-top: 4px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Bame;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+header {
+  align-items: center;
+  container-type: inline-size;
+  color: var(--yellow-color);
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  text-align: center;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: var(--yellow-color);
+    font-family: Lora, serif;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: var(--dark-yellow-color);
+    }
+
+    &[aria-current="page"] {
+      color: var(--dark-brown-color);
+    }
+  }
+
+  .home-link {
+    font-family: Bame;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.15;
+    margin-top: 20px;
+  }
+
+  @container (max-width: 719px) {    
+    ul {
+      gap: 12px;
+    }
+  }
+
+  @container (min-width: 720px) {
+
+    ul {
+      gap: 20px;
+    }
+  }
+}
