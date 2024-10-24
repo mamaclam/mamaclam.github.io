@@ -1,0 +1,33 @@
+section {
+  background-color: var(--light-yellow-color);
+  color: var(--dark-gray-color);
+  padding: var(--section-y-padding) var(--section-x-padding);
+
+  .content {
+    margin: 0 auto;
+    max-width: 720px;
+  }
+
+  h1 {
+    font-family: Karla, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: Karla, sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-top: 16px;
+  }
+
+  ol {
+    padding-inline-start: 32px;
+  }
+
+  p {
+    margin-top: 8px;
+  }
+}
