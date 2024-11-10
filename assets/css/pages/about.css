@@ -1,11 +1,65 @@
 section.im-alexandra {
+  align-items: center;
   background-color: var(--light-yellow-color);
   color: var(--dark-gray-color);
   container-type: inline-size;
   display: flex;
+  flex-direction: column;
   padding: var(--section-y-padding) var(--section-x-padding);
 
   p {
     margin-top: 16px;
   }
+
+
+  img {
+    aspect-ratio: 1;
+    clip-path: polygon(
+      100% 50%,
+      83% 64%,
+      85% 85%,
+      64% 83%,
+      50% 100%,
+      36% 83%,
+      15% 85%,
+      17% 64%,
+      0% 50%,
+      17% 36%,
+      15% 15%,
+      36% 17%,
+      50% 0%,
+      64% 17%,
+      85% 15%,
+      83% 36%
+    );
+    object-fit: cover;
+    object-position: 50% 0;
+    overflow: hidden;
+  }
+
+  @container (min-width: 720px) {
+    .content {
+      display: flex;
+      gap: 24px;
+      max-width: 720px;
+    }
+  }
+
+  @container (max-width: 719px) {
+    .content {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .image {
+      max-width: 200px;
+    }
+  }
+}
+
+:root {
+  --top: 0%;
+  --center: 50%;
 }

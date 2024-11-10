@@ -31,11 +31,18 @@ section.image {
 
   img {
     object-fit: cover;
+    width: 100%;
   }
 
   @container (min-width: 720px) {
     img {
-      aspect-ratio: 2 / 1;
+      aspect-ratio: 2.5 / 1;
+    }
+  }
+
+  @container (min-width: 1599px) {
+    img {
+      aspect-ratio: 3 / 1;
     }
   }
 

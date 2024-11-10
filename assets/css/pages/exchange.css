@@ -6,13 +6,18 @@ section {
 
   p {
     margin-top: 16px;
-    text-align: center;
   }
 
   .content {
     display: flex;
     margin: 0 auto;
-    max-width: 720px;
+    max-width: 600px;
+  }
+
+
+  img {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
+    overflow: hidden;
   }
 
   @container (min-width: 720px) {
@@ -21,17 +26,18 @@ section {
     }
 
     .left {
-      flex: 3;
+      flex: 4;
     }
 
     .right {
-      flex: 2;
+      flex: 3;
     }
   }
 
   @container (max-width: 719px) {
     .content {
       flex-direction: column-reverse;
+      gap: 32px;
     }
 
     .left {
@@ -41,7 +47,7 @@ section {
 
     .right {
       margin: 0 auto;
-      max-width: 320px;
+      max-width: 200px;
     }
   }
 }

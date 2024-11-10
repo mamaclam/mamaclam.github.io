@@ -5,6 +5,7 @@
   --black-color: #424242;
   --dark-brown-color: #4F3E0F;
   --dark-gray-color: #636260;
+  --medium-gray-color: #888682;
   --dark-yellow-color: #C69B25;
   --light-yellow-color: #ECE0C3;
   --yellow-color: #E3B741;
@@ -83,13 +84,13 @@ body {
 
 footer {
   font-size: 12px;
-  padding: 24px var(--section-x-padding);
+  padding: var(--section-y-padding) var(--section-x-padding);
   text-align: center;
   text-transform: uppercase;
-  color: var(--dark-gray-color);
+  color: var(--medium-gray-color);
 
   a {
-    color: var(--dark-gray-color);
+    color: var(--medium-gray-color);
 
     &:hover {
       color: var(--dark-yellow-color);
