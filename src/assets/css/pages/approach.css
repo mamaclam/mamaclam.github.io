@@ -7,7 +7,7 @@ section.approaches {
   flex-direction: column;
   padding: var(--section-y-padding) var(--section-x-padding);
 
-  h4 {
+  h2 {
     font-family: Forum, serif;
     font-weight: 400;
     font-size: 24px;
@@ -23,18 +23,35 @@ section.approaches {
     margin: 0;
     padding: 0;
   }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
   
   @container (max-width: 719px) {
     li + li {
       margin-top: 32px;
     }
+
+    .content {
+      gap: 24px;
+    }
   }
 
   @container (min-width: 720px) {
+    h1 {
+      text-align: center;
+    }
+
     ul {
       display: grid;
       gap: 36px;
       grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+
+    .content {
+      gap: 48px;
       max-width: 720px;
     }
   }

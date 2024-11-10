@@ -11,10 +11,10 @@ title: Connect
 <section>
   <div class="content">
     <div class="left">
-      image
+      <img src="/assets/images/feverfew-IMGP8395.jpg" alt="feverfew">
     </div>
     <div class="right">
-      <h1>CONTACT</h1>
+      <h1>CONNECT</h1>
       <p>
         All services are provided via telehealth.
       </p>
